@@ -88,21 +88,16 @@ ul {
     letter-spacing: -20;
     margin-bottom: 10px;
     color: white;
-}
+}  
 
 .highlight {
-    color: rgb(85, 33, 189);
+    color: rgb(255, 145, 0);
+}
+.hola {
+    text-decoration: underline;
 }
 
-.profile-text h2 {
-    font-weight: 670;
-    color: silver;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.1); 
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
+
 
 .profile-text p {
     color: silver;
@@ -197,7 +192,7 @@ ul {
 /* skills section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* https://www.geeksforgeeks.org/css/how-to-create-a-responsive-css-grid-layout/ */
     gap: 40px;
 }
 
@@ -209,11 +204,16 @@ ul {
     box-shadow: 0 4px 6px dimgray;
 }
 
-.skill-category h3 {
+.skill-category h2 {
     margin-bottom: 20px;
     color: mediumpurple;
     border-bottom: 1px solid dimgray;
     padding-bottom: 10px;
+}
+
+.skill-list {
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .skill-list li {
