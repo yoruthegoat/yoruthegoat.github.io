@@ -157,8 +157,6 @@ ul {
 
 .bg-light {
     background-color: black; 
-    border-top: 1px solid dimgray;
-    border-bottom: 1px solid dimgray;
 }
 
 .section-title {
@@ -252,8 +250,8 @@ ul {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px dimgray;
-    border-color: mediumpurple;
+    border: 3px solid mediumpurple;
+    box-shadow: 0 0 20px mediumpurple;
 }
 
 .project-img {
@@ -288,10 +286,9 @@ ul {
 /* footer */
 footer {
     background: rgb(19, 4, 44);
-    border-top: 1px solid dimgray;
     color: silver;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 footer p {
