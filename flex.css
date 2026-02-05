@@ -76,6 +76,7 @@ ul {
     /* https://cssgradient.io/ */
 }
 
+
 .profile-content {
     display: flex;
     align-items: center;
@@ -140,7 +141,7 @@ ul {
     
     border: 3px solid mediumpurple;
     box-shadow: 0 0 20px mediumpurple;
-    transition: background-image 0.3s ease, transform 0.3s ease;
+    transition: background-image 0.67s ease, transform 0.67s ease, box-shadow 0.67s ease, border-color 0.67s ease;    
     cursor: pointer;
 }
 
