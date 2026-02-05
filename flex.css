@@ -1,0 +1,298 @@
+body {
+    font-family: 'Courier New', sans-serif; 
+    line-height: 1.4;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* font setup */
+h1, h2, h3, .logo, .section-title, .btn, .nav-links a {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -1px; /* tight */
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.67s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* navigation bar */
+.navbar {
+    background: black;
+    border-bottom: 1px solid dimgray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: mediumpurple;
+    text-transform: lowercase;
+    letter-spacing: -1px; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: mediumpurple;
+}
+
+/* profile section */
+.profile {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #020024;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 44%, rgba(3, 1, 50, 1) 61%, rgba(35, 6, 92, 1) 73%, rgba(58, 9, 121, 1) 83%, rgba(109, 0, 163, 1) 100%);
+    /* https://cssgradient.io/ */
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 67px;
+}
+
+.profile-text h1 {
+    font-size: 57px; 
+    letter-spacing: -20;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.highlight {
+    color: rgb(85, 33, 189);
+}
+
+.profile-text h2 {
+    font-weight: 670;
+    color: silver;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.profile-text p {
+    color: silver;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: mediumpurple;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 5px;
+    transition: all 0.67s ease;
+    border: 1px solid mediumpurple;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: transparent;
+    color: mediumpurple;
+    box-shadow: 0 0 67px mediumpurple; 
+}
+
+/* profile image button */
+.profile-image-btn {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+    background-image: url('https://scontent.fmnl45-1.fna.fbcdn.net/v/t39.30808-6/447210077_7398601833570567_1693290049027284318_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE8mQ-UC6M_tco0P32T1wwCafxWTSFy649p_FZNIXLrj2nFKr3_GIccrY1Tkor0Q1EPYRpBEDPxGP6uQpu9RNda&_nc_ohc=Jz8yNCA7LAkQ7kNvwFWq7ue&_nc_oc=AdlwD43F7Y4qBH7EBEzSJ5SPnhAWGn-xTFJkajSc4ycmyhA_gBi6RCVoQwEbaCq1xPg&_nc_zt=23&_nc_ht=scontent.fmnl45-1.fna&_nc_gid=Fu-JzK1Io13zOplZ4JXkKQ&oh=00_AftddbVUbeaZLWTPAn0Ji2hlF9ovUBdDcAZNQNK4y7_qFw&oe=698A0661');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    border: 3px solid mediumpurple;
+    box-shadow: 0 0 20px mediumpurple;
+    transition: background-image 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.profile-image-btn:hover {
+    background-image: url('https://cdn.britannica.com/30/150930-050-51878468/lion-panthea-leo-Namibia.jpg');
+    border-color: yellow;
+    box-shadow: 0 0 20px yellow;
+}
+
+/* section class in general */
+.section {
+    padding: 67px 0;
+}
+
+.section#skills {
+    background: rgb(22, 22, 22);
+}
+
+.bg-light {
+    background-color: black; 
+    border-top: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    position: relative;
+    color: white;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 5px;
+    background: mediumpurple;
+    margin: 15px auto 0;
+    box-shadow: 0 0 10px mediumpurple;
+    border-radius: 4px;
+}
+
+/* about section */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: silver;
+}
+
+/* skills section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.skill-category {
+    background: black;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid dimgray;
+    box-shadow: 0 4px 6px dimgray;
+}
+
+.skill-category h3 {
+    margin-bottom: 20px;
+    color: mediumpurple;
+    border-bottom: 1px solid dimgray;
+    padding-bottom: 10px;
+}
+
+.skill-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    color: whitesmoke;
+}
+
+.skill-list li::before {
+    content: '>>'; 
+    color: mediumpurple;
+    position: absolute;
+    left: 0;
+    font-family: 'JetBrains Mono', monospace; 
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* projects section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: black;
+    border: 1px solid dimgray;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px dimgray;
+    border-color: mediumpurple;
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid dimgray;
+}
+
+.project-info {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.project-info .role {
+    font-size: 14px;
+    color: mediumpurple;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.project-info p {
+    color: silver;
+}
+
+/* footer */
+footer {
+    background: rgb(19, 4, 44);
+    border-top: 1px solid dimgray;
+    color: silver;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
